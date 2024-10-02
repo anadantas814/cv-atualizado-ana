@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Vitae - Ana Clara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #d5006d; /* Rosa */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            background-image: url("https://i.ibb.co/2skx5mF/Whats-App-Image-2024-10-02-at-14-55-26.jpg"); 
+            background-size: cover;
+            color: #011968;
+        }
+        h1 {
+            color: #050758; /* Rosa mais escuro */
+        }
+        #info {
+            background: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none; /* Esconde inicialmente */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #d5006d; /* Rosa */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #a50043; /* Rosa mais escuro ao passar o mouse */
+        }
+        img {
+            max-width: 100%; /* Ajusta a imagem ao tamanho do contêiner */
+            height: auto;
+            border-radius: 10px; /* arredondar os cantos para a imagem */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Currículo Vitae - Ana Clara Dantas </h1> 
+
+<!-- Adicione a imagem aqui -->
+<img src="https://images.app.goo.gl/2fMBcoFMqwAGTWmz8">
+
+<p id="info"></p>
+<button onclick="mostrarResultado()">Mostrar Dados</button>
+
+<script> 
+function mostrarResultado() {
+    let nome = "ANA CLARA DANTAS CARNEIRO TOSTA"; 
+    let contato = "Telefone e WhatsApp: (71) 98899-2401  E-mail: anaclaratosta814@gmail.com";
+    let endereço = "Paripe - Salvador Bahia";
+    let idade = 18;
+    let formacao = "Graduanda em Administração (2º semestre) - UNIFT e Desenvolvimento de Sistemas (3º semestre) - SENAI";
+    let experiencias = "Jovem Aprendiz - Banco do Brasil (2021-2023), Estagiária Administrativo - Janaina Bastos Advocacia e Consultoria";
+    let resumo = "Sou uma estudante dedicada e proativa, com interesse em áreas administrativas e de tecnologia.";
+    let pontosPositivos = "Responsável, adaptável, e com boa comunicação.";
+    let pontosNegativos = "Às vezes, sou ansiosa demoro para tomar decisões.";
+    let habilidades = "Gestão de tempo, trabalho em equipe, e conhecimentos em Excel e Word, rotinas administrativas.";
+    
+
+    document.getElementById("info").innerHTML = 
+        "<strong>Nome:</strong> " + nome + "<br><br>" +
+        "<strong>Contato:</strong> " + contato + "<br><br>" +
+        "<strong>Endereço:</strong> " + endereço + "<br><br>" +
+        "<strong>Idade:</strong> " + idade + "<br><br>" +
+        "<strong>Formação Acadêmica:</strong> " + formacao + "<br><br>" +
+        "<strong>Experiências:</strong> " + experiencias + "<br><br>" +
+        "<strong>Resumo:</strong> " + resumo + "<br><br>" +
+        "<strong>Pontos Positivos:</strong> " + pontosPositivos + "<br><br>" +
+        "<strong>Pontos Negativos:</strong> " + pontosNegativos + "<br><br>" +
+        "<strong>Principais Habilidades:</strong> " + habilidades;
+        
+    document.getElementById("info").style.display = "block"; // Mostra o resultado
+}
+</script> 
+</body>
+</html>
